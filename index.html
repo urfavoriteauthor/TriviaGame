@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheets" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Trivia Game</title>
+    <style>
+        .jumbotron {
+            background-color: black;
+            color: white;
+            font-size:
+        }
+
+        #triviaHeader {
+            font-size: 74px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 20px;
+        }
+
+        #subheader {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .buttons {
+            color: white;
+            background-color: black;
+            text-align: center;
+            line-height: 40px;
+            padding: 20px;
+            width: 70%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ;
+
+
+
+        ;
+
+        .buttons {
+            border-style: solid;
+            border: 2px;
+            background-color: black;
+            border-style: solid;
+            border: 10px;
+            border-color: red;
+        }
+
+        ;
+
+        #timerBox {
+            color: white;
+            background-color: black;
+            text-align: center;
+            line-height: 40px;
+            padding: 20px;
+            width: 70%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #bodyTag {
+            background-image: url(https://i.etsystatic.com/14192253/r/il/b3441c/1287361256/il_570xN.1287361256_9vvf.jpg);
+        }
+
+        ;
+
+        .completeButton {
+            background-color: black;
+            color: white;
+        }
+
+        ;
+    </style>
+</head>
+
+<body id="bodyTag">
+    <div class="triviaTitle">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="triviaHeader"><u>TOTALLY TRIVIAL TRIVIA!</u></h1>
+                <p id="subheader">Answer the questions before the time runs out!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="countdown">
+        <div class="card" style="width: 18rem; background-color: black; color: white; padding: 10px;">
+            <img src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Hourglass-PNG-Transparent-Image-500x533.png"
+                class="card-img-top" alt="hourglass">
+            <div id="timerBox">
+                <h5 class="card-title">Watch your Time!</h5>
+                <p class="card-text">Watch your time!</p>
+                <div id="clockTicking">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <div id="triviaQuestions">
+            <div class="card-body">
+                <div id="questionOne">
+                    <h1><u><strong>HERO QUIZ!</strong></u></h1>
+                    <h3>Which hero resides in BludHaven?</h3>
+                    <div class="form-check form-check-inline">
+                        <input id="redHood" type="button" id="inlineCheckbox1" value="Red Hood">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="nightWing" type="button" id="inlineCheckbox2" value="Nightwing">
+                        <label class="form-check-label" for="inlineCheckbox2"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="batman" type="button" id="inlineCheckbox3" value="Batman">
+                        <label class="form-check-label" for="inlineCheckbox3"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="redRobin" type="button" id="inlineCheckbox1" value="Red Robin">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                </div>
+                <hr>
+                <div id="questionTwo">
+                    <h3>Which of these heroes does not have a healing factor?</h3>
+                    <div class="form-check form-check-inline">
+                        <input id="x23" type="button" id="inlineCheckbox1" value="X-23">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="deadpool" type="button" id="inlineCheckbox2" value="Deadpool">
+                        <label class="form-check-label" for="inlineCheckbox2"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="sabertooth" type="button" id="inlineCheckbox3" value="Sabertooth">
+                        <label class="form-check-label" for="inlineCheckbox3"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="beast" type="button" id="inlineCheckbox1" value="Beast">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                </div>
+                <hr>
+                <div id="questionThree">
+                    <h3>What is the name of the country that T'Challa is king of?</h3>
+                    <div class="form-check form-check-inline">
+                        <input id="asgard" type="button" id="inlineCheckbox1" value="Asgard">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="wakanda" type="button" id="inlineCheckbox2" value="Wakanda">
+                        <label class="form-check-label" for="inlineCheckbox2"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="latveria" type="button" id="inlineCheckbox3" value="Latveria">
+                        <label class="form-check-label" for="inlineCheckbox3"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="atlantis" type="button" id="inlineCheckbox1" value="Atlantis">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                </div>
+                <hr>
+                <div id="questionFour">
+                    <h3>This hammer will give whoever is worthy the power of Thor</h3>
+                    <div class="form-check form-check-inline">
+                        <input id="mjolnir" type="button" id="inlineCheckbox1" value="Mjolnir">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="odin" type="button" id="inlineCheckbox2" value="Odin">
+                        <label class="form-check-label" for="inlineCheckbox2"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="gauntlet" type="button" id="inlineCheckbox3" value="The Infinity Gauntlet">
+                        <label class="form-check-label" for="inlineCheckbox3"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="hammerTime" type="button" id="inlineCheckbox1" value="MC Hammer">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                </div>
+                <hr>
+                <div id="questionFive">
+                    <h3>Which of these has never been a leader of the X-men?</h3>
+                    <div class="form-check form-check-inline">
+                        <input id="professorX" type="button" id="inlineCheckbox1" value="Professor Xavier">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="magneto" type="button" id="inlineCheckbox2" value="Magneto">
+                        <label class="form-check-label" for="inlineCheckbox2"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="cyclops" type="button" id="inlineCheckbox3" value="Cyclops">
+                        <label class="form-check-label" for="inlineCheckbox3"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="jubilee" type="button" id="inlineCheckbox1" value="Jubilee">
+                        <label class="form-check-label" for="inlineCheckbox1"></label>
+                    </div>
+                </div>
+                <hr>
+                <h3>When the time runs out...the triva game is over!</h3>
+                <div class="completeButton">
+                    <button id="completeButton">
+                        <a href=resultsPage.html>COMPLETE!</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

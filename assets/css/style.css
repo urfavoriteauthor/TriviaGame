@@ -1,0 +1,55 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+    font-size:
+}
+
+#triviaHeader {
+    font-size: 74px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+}
+
+#subheader {
+    font-size: 32px;
+    text-align: center;
+}
+
+.buttons {
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 40px;
+    padding: 20px;
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+;
+
+
+
+;
+
+.buttons {
+    border-style: solid;
+    border: 2px;
+    background-color: black;
+    border-style: solid;
+    border: 10px;
+    border-color: red;
+}
+
+#bodyTag {
+    background-image: url(https://i.etsystatic.com/14192253/r/il/b3441c/1287361256/il_570xN.1287361256_9vvf.jpg);
+}
+
+;
+
+.completeButton {
+    background-color: black;
+    color: white;
+}
+
+;
